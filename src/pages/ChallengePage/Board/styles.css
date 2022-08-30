@@ -1,0 +1,11 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.lists-container {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}

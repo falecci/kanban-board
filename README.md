@@ -1,18 +1,44 @@
+## Disclaimer 
+
+repo is not forked so there won't be any sneaky peekers in the future
+## Considerations before diving in
+
+This challenge does not consider as big factors:
+
+- nice and responsive UI
+- full test coverage
+- tools setup for development process (prettier, eslint, husky, volta, etc)
+- usage of really helpful libraries (components library, forms management library, etc)
+- performance considerations (memoization and virtualization)
+- no CI/CD for running tests or deploying on a pipeline
+
+## So what is this up to?
+
+If things mentioned above are not included, what's the deal with this project? Well, here it is:
+
+- this is my most basic way of doing and working around things
+- expect overall code to be simple and easy to read, follow and enhance, because we all love simple and stupid solutions
+- it's prepared to scale by having a clear structure, focusing mostly on `pages` and `components`
+- critical performance components are ready to be memoized and virtualized (dealing with 1000x tasks per list)
+- only one integration test that give us the most confidence our app is working correctly, and sets nice guidance for future devs and tests
+- `components` folder has only reusable components. `TaskForm`, `List`and `Board` would just live in the `ChallengePage`. But we could extract them in the future.
+- removed the `package-lock.json` since we are using `yarn` and we don't want other devs to be confused about this.
+
 ## Video Intro
 https://www.loom.com/share/3df7fcb5424644638b00724cb178e2ff
 
-* [Getting Started with the Every.io engineering challenge.](#getting-started-with-the-everyio-engineering-challenge)
-  * [The biggest factor will be your code:](#the-biggest-factor-will-be-your-code)
-  * [Requirements](#requirements)
-  * [Quick Start](#quick-start)
-* [Original CRA README below](#original-cra-readme-below)
-  * [Getting Started with Create React App](#getting-started-with-create-react-app)
-  * [Available Scripts](#available-scripts)
-    * [`yarn start`](#yarn-start)
-    * [`yarn test`](#yarn-test)
-    * [`yarn build`](#yarn-build)
-    * [`yarn eject`](#yarn-eject)
-  * [Learn More](#learn-more)
+- [Getting Started with the Every.io engineering challenge.](#getting-started-with-the-everyio-engineering-challenge)
+  - [The biggest factor will be your code:](#the-biggest-factor-will-be-your-code)
+  - [Requirements](#requirements)
+  - [Quick Start](#quick-start)
+- [Original CRA README below](#original-cra-readme-below)
+  - [Getting Started with Create React App](#getting-started-with-create-react-app)
+  - [Available Scripts](#available-scripts)
+    - [`yarn start`](#yarn-start)
+    - [`yarn test`](#yarn-test)
+    - [`yarn build`](#yarn-build)
+    - [`yarn eject`](#yarn-eject)
+  - [Learn More](#learn-more)
 
 
 # Getting Started with the Every.io engineering challenge.

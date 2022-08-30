@@ -1,0 +1,9 @@
+.list-item {
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.tasks-list {
+    list-style: none;
+    padding: 24px;
+}
